@@ -1,224 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Landing Page - HTML, CSS, Javascript (GSAP)</title>
-    <!-- ==== STYLE.CSS ==== -->
-    <link rel="stylesheet" href="./style.css">
-    <!-- REMIXICON CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-</head>
-<body>
-    <!-- ==== WRAPPER ==== -->
-    <section class="wrapper">
-        <div class="left_container">
-            <nav>
-                <div class="logo_content">
-                    <img src="./logo.png" alt="logo" class="nike_logo">
+<html>
+    <head>
+    <title>Portifolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="main">
+            <header class="header">
+                <div class="container">
+                    <div class="row flex-end">
+                        <button type="button" class="nav-toggler">
+                            <span></span>
+                        </button>
+                        <nav class="nav">
+                            <div class="nav-inner">
+                                <ul>
+                                    <li><a href="#home" class="nav-item link-item">home</a></li>
+                                    <li><a href="#about" class="nav-item link-item">about</a></li>
+                                   <!----<li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>-->
+                                    <li><a href="#contact" class="nav-item link-item">contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
-                <ul class="nav_content">
-                    <li><a class="nav_links active" href="javascript:void(0)">man</a></li>
-                    <li><a class="nav_links" href="javascript:void(0)">women</a></li>
-                    <li><a class="nav_links" href="javascript:void(0)">kids</a></li>
-                    <li><a class="nav_links" href="javascript:void(0)">customize</a></li>
-                </ul>
-            </nav>
-            <br>
-            <main class="tools">
-                <div class="search">
-                    <input type="text" class="search_input" placeholder="Search here....">
-                    <button class="search_btn">
-                        <div class="slider">
-                            <i class="ri-search-line"></i>
+            </header>
+            <section class="home-section align-items-center active" id="home">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="home-text">
+                            <p>Hello, I'm</p>
+                            <h1>pavani chowtha</h1>
+                            <h2>Student of Acharya Nagarjuna University,Web designer</h2>
+                            <a href="#about" class="btn link-item">more about me</a>
+                            <!--<a href="#portfolio" class="btn link-item">portifolio</a>-->
                         </div>
-                    </button>
-                </div>
-                <div class="discount">
-                    <span class="discount_percentage">60%</span>
-                    <div class="seprator"></div>
-                    <span class="save_up">save up to</span>
-                </div>
-            </main>
-            <section> 
-                <main class="brand_type">
-                    <div class="large_text">
-                        <h2>stylist <br>sneakers</h2>
+                        <div class="home-img"></div>
+                        <div class="img-box">
+                            <img src="image/pani.png" alt="profile-img">
+                        </div>
                     </div>
-                    <div class="sliders">
-                        <button class="slider_btn" disabled>
-                            <i class="ri-arrow-left-s-line"></i>
-                        </button>
-                        <button class="slider_btn">
-                            <i class="ri-arrow-right-s-line"></i>
-                        </button>
+                </div>
+
+            </section>
+            <!--about section start-->
+            <section class="about-section sec-padding" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>about me</h2>
+                        </div>
                     </div>
-                </main>
+                    <div class="row">
+                        <div class="about-img">
+                            <div class="img-box">
+                                <img src="image/paani.png" alt="about img">
+                            </div>
+                        </div>
+                        <div class="about-text">
+                            <h3>Skills</h3>
+                        <div class="skills">
+                            <div class="skill-item">html</div>
+                            <div class="skill-item">css</div>
+                            <div class="skill-item">javascript</div>
+                            <div class="skill-item">php</div>
+                            <div class="skill-item">sql</div>
+                            <div class="skill-item">java</div>
+                            <div class="skill-item">python</div>
+                            <div class="skill-item">c</div>
+                            <div class="skill-item">data structures</div>
+                        </div>
+                        <div class="about-tabs">
+                            <button type="button" class="tab-item active" data-target="#education">education</button>
+                            <button type="button" class="tab-item" data-target="#experience">experience</button>
+                        </div>
+                        <div class="tab-content active" id="education">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <span class="date">2020 - 2024</span>
+                                    <h4>bachelor of technology-<span>ACHARYA NAGARJUNA UNIVERSITY,guntur</span></h4>
+                                    <p>Computer Science</p>
+                                    <p>SGPA: 8.58/10</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">2018 - 2020</span>
+                                    <h4>INTERMEDIATE-<span>AP model govt junior college,edulavalasa</span></h4>
+                                    <p>MPC</p>
+                                    <p>CGPA: 9.75/10</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">2017 - 2018</span>
+                                    <h4>SSC-<span>ZP high school (board),Narasannapeta</span></h4>
+                                    <p>CGPA: 9.5/10</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="experience">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <span class="date">2022</span>
+                                    <h4>Web developer-<span>codeclause</span></h4>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="date">2022</span>
+                                    <h4>Web developer-<span>coderscave</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="cv.pdf" target="_blank" class="btn">download cv</a>
+                        <a href="#contact" class="btn link-item">contact me</a>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <br>
-            <section class="bottom_shoes_slider">
-                    <ul class="bottom_shoes_card">
-                        <li class="card_shoe">
-                            <div class="shoe_content">
-                                <img src="./shoe_img/nike-air-force.png" alt="nike-air-force" class="shoe">
-                            </div>
-                            <div class="desc_product">
-                                <div class="transparent_bg">
-                                    <div class="add_to_cart">
-                                        <i class="ri-add-line"></i>
+            <!--about section close-->
+            <!--contact section start-->
+            <section class="contact-section sec-padding" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>contact me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="contact-form">
+                            <form>
+                                <div class="row">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Name" class="input-control" required>
                                     </div>
-                                </div>
-                                <div class="desc">
-                                    <span class="card_product_name">nike air force</span>
-                                    <span>3 colors</span>
-                                    <span class="price"><i class="ri-money-euro-circle-line"></i> 230.00</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card_shoe">
-                            <div class="shoe_content" style="background-color: #c93849;">
-                                <img src="./shoe_img/nike-air-force-1-high.png" alt="nike-air-force-1-high" class="shoe">
-                            </div>
-                            <div class="desc_product">
-                                <div class="transparent_bg">
-                                    <div class="add_to_cart" style="background-color: #c93849;">
-                                        <i class="ri-add-line"></i>
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Email" class="input-control" required>
                                     </div>
-                                </div>
-                                <div class="desc">
-                                    <span class="card_product_name">air force 1 high</span>
-                                    <span>3 colors</span>
-                                    <span class="price"><i class="ri-money-euro-circle-line"></i> 230.00</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card_shoe">
-                            <div class="shoe_content" style="background-color: #78787C;">
-                                <img src="./shoe_img/air-max-270.png" alt="air-max-270" class="shoe">
-                            </div>
-                            <div class="desc_product">
-                                <div class="transparent_bg">
-                                    <div class="add_to_cart" style="background-color: #78787C;">
-                                        <i class="ri-add-line"></i>
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Subject" class="input-control" required>
                                     </div>
-                                </div>
-                                <div class="desc">
-                                    <span class="card_product_name">air max 270</span>
-                                    <span>3 colors</span>
-                                    <span class="price"><i class="ri-money-euro-circle-line"></i> 230.00</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card_shoe">
-                            <div class="shoe_content" style="background-color: black;">
-                                <img src="./shoe_img/air-max-excee-.png" alt="air-max-excee-" class="shoe">
-                            </div>
-                            <div class="desc_product">
-                                <div class="transparent_bg">
-                                    <div class="add_to_cart" style="background-color: black;">
-                                        <i class="ri-add-line"></i>
+                                    <div class="input-group">
+                                       <textarea placeholder="Message" class="input-control" required></textarea>
                                     </div>
-                                </div>
-                                <div class="desc">
-                                    <span class="card_product_name">air max excee</span>
-                                    <span>3 colors</span>
-                                    <span class="price"><i class="ri-money-euro-circle-line"></i> 230.00</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="card_shoe">
-                            <div class="shoe_content" style="background-color: #959ebd;">
-                                <img src="./shoe_img/nike-span-2.png" alt="nike-span-2" class="shoe">
-                            </div>
-                            <div class="desc_product">
-                                <div class="transparent_bg">
-                                    <div class="add_to_cart" style="background-color: #959ebd;">
-                                        <i class="ri-add-line"></i>
+                                    <div class="submit-btn">
+                                     <button type="submit" class="btn">send message</button>
                                     </div>
+                                    
                                 </div>
-                                <div class="desc">
-                                    <span class="card_product_name">nike span 2</span>
-                                    <span>3 colors</span>
-                                    <span class="price"><i class="ri-money-euro-circle-line"></i> 230.00</span>
+                            </form>
+
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-info-item">
+                                <h3>Email</h3>
+                                <p>example@gmail.com</p>
+                            </div>
+                            <div class="contact-info-item">
+                                <h3>Phone</h3>
+                                <p>91 98 **** ****</p>
+                            </div>
+                            <div class="contact-info-item">
+                                <h3>follow me</h3>
+                                <div class="social-links">
+                                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
+
         </div>
-        <main class="right_container">
-            <nav class="right_nav">
-                <ul class="right_nav_content">
-                    <li class="r_nav_links">
-                        model : ck5828-400
-                    </li>
-                    <button class="cart_btn"><i class="ri-shopping-bag-fill"></i></button>
-                </ul>
-            </nav>
-            <section class="selected_product">
-                <div class="circle1">
-                    <div class="icon_">
-                        <i class="ri-add-line"></i>
-                        <div class="product_tag">
-                            <p class="offer1">99%</p>
-                            <p>comfortable</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="circle2">
-                    <div class="icon_">
-                        <i class="ri-add-line"></i>
-                        <div class="product_tag">
-                            <p class="offer2">rare high percentage</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="selected_product_content">
-                    <img src="./shoe_img/air-max-90.png" alt="nike-air-max-90" class="selected_product_img">
-                </div>
-                <div class="size_product">
-                    <main class="content">
-                        <ul class="size_list">
-                            <li class="size_item">
-                                <span>39</span>
-                            </li>
-                            <li class="size_item">
-                                <span>40</span>
-                            </li>
-                            <li class="size_item">
-                                <span>41</span>
-                            </li>
-                            <li class="size_item">
-                                <span>42</span>
-                            </li>
-                            <li class="size_item">
-                                <span>43</span>
-                            </li>
-                        </ul> <br><br>
-                        <div class="text">
-                            <h3 class="selected_product_text">nike air max 90</h3>
-                        </div>
-                        <div class="reviews">
-                            <span>reviews 1k+</span>
-                            <ul class="stars_list">
-                                <li><i class="ri-star-fill"></i></li>
-                                <li><i class="ri-star-fill"></i></li>
-                                <li><i class="ri-star-fill"></i></li>
-                                <li><i class="ri-star-fill"></i></li>
-                                <li><i class="ri-star-fill"></i></li>
-                            </ul>
-                        </div>
-                    </main>
-                </div>
-            </section>
-        </main>
-    </section>
-
-<!-- ==== GSAP CDN ==== -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-<!-- ==== MAIN JS ==== -->
-<script src="./js/main.js"></script>
-</body>
+        <script src="js/script.js"></script>
+    </body>
 </html>
